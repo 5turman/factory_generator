@@ -1,0 +1,23 @@
+name: factory_generator
+description: A starting point for Dart libraries or applications.
+# version: 1.0.0
+# homepage: https://www.example.com
+# author: Andrey Babinov <5turman@mail.ru>
+
+environment:
+  sdk: '>=2.4.0 <3.0.0'
+
+dependencies:
+  build: ^1.1.5
+  code_builder: ^3.2.0
+  source_gen: ^0.9.4
+  recase: ^2.0.1
+  kiwi:
+    git:
+      url: https://github.com/5turman/kiwi.git
+      path: kiwi
+
+dev_dependencies:
+  pedantic: ^1.7.0
+  build_runner: ^1.6.3
+  test: ^1.6.0

@@ -1,0 +1,16 @@
+targets:
+  $default:
+    builders:
+      factory_generator:
+        enabled: true
+
+# Read about `build.yaml` at https://pub.dartlang.org/packages/build_config
+builders:
+  factory_generator:
+    import: "package:factory_generator/builder.dart"
+    builder_factories:
+      - factoryGeneratorBuilder
+    build_extensions: {".dart": [".kiwi.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
